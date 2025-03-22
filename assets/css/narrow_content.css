@@ -113,6 +113,18 @@
     }
 }
 
+.selector .buttons .button:first-child {
+    border-top-left-radius: 5px;
+}
+
+.selector .buttons .button:last-child {
+    border-top-right-radius: 5px;
+}
+
+.selector .buttons .button {
+    border: 1px solid transparent;
+}
+
 .selector .buttons .button:before {
     position: absolute;
     z-index: -1;
@@ -133,6 +145,8 @@
 }
 .selector .buttons .button:has(input:checked) {
     background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    z-index: 1;
 }
 
 .selector_content {
@@ -143,6 +157,7 @@
     border-width: 0 0 4px 0;
     border-color: rgba(255, 255, 255, 0.75);
     transition: height 0.15s ease 0s;
+    border-top-right-radius: 10px;
 }
 .selector_content .option {
     display: flex;

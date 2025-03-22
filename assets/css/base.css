@@ -39,3 +39,7 @@ body {
     background-color: black;
     margin: 0;
 }
+
+section {
+    border-radius: 100px;
+}

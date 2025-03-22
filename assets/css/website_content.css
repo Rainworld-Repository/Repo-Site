@@ -19,7 +19,7 @@
     z-index: -1;
     position: absolute;
     top: 0px;
-    height: 240px;
+    height: 300px;
     width: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 }
@@ -55,6 +55,7 @@
     backdrop-filter: blur(12.5px);
 
     overflow: hidden;
+    border-radius: 20px;
 }
 
 /* TITLE */
