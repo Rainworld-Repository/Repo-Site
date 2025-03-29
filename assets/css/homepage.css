@@ -130,6 +130,14 @@
     border-width: 3px;
     border-color: #cccccc;
     border-style: solid;
+    
+    cursor: pointer;
+    
+    transition: border 0.25s, transform 0.25s;
+}
+.website_content .info .content .left:hover {
+    border-color: #cccccc;
+    transform: scale(1.04);
 }
 .website_content .info .content .left img {
     margin: 7px;
