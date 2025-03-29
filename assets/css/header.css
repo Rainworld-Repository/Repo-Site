@@ -221,12 +221,22 @@
     opacity: 0%;
     transition: right 0.15s ease 0s, opacity 0.15s ease 0s;
 }
+.header .content .socials .sideways_slide .slider_3 {
+    padding-right: 15px;
+    right: -0px;
+    opacity: 0%;
+    transition: right 0.15s ease 0s, opacity 0.15s ease 0s;
+}
 .header .content .socials .sideways_slide:hover .slider_1 {
     right: 39px;
     opacity: 100%;
 }
 .header .content .socials .sideways_slide:hover .slider_2 {
     right: 93px;
+    opacity: 100%;
+}
+.header .content .socials .sideways_slide:hover .slider_3 {
+    right: 143px;
     opacity: 100%;
 }
 
