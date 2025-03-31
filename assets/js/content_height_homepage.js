@@ -25,12 +25,12 @@ function resize(event) {
     let bg_container = document.getElementById("bg_container");
     if (full_height <= vh) {
         let banner_height = document.getElementById("banner").offsetHeight;
-        parallax_banner_height = banner_height;
         final_height = vh - banner_height - 100 - footer_height;
         parallax_content_height = vh - banner_height - 100 - footer_height;
         website_content.style.height = final_height - 70 + "px";
         
     }
+    parallax_banner_height = document.getElementById("banner").offsetHeight;
 
     var background = document.getElementById("background");
     if (full_height <= background.offsetHeight) {
