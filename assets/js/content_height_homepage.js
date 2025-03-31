@@ -12,18 +12,21 @@ function resize(event) {
 
 
     var footer_height = footer.offsetHeight;
+    parallax_footer_height = footer_height;
     /* console.log(footer_height); */
 
     /* full height of the page content */
     var full_height = website_content_height + 849 + footer_height;
     /* final height of website_content */
     var final_height = website_content_height;
+    parallax_content_height = website_content_height;
     
     let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     let bg_container = document.getElementById("bg_container");
     if (full_height <= vh) {
         let banner_height = document.getElementById("banner").offsetHeight;
         final_height = vh - banner_height - 100 - footer_height;
+        parallax_content_height = vh - banner_height - 100 - footer_height;
         website_content.style.height = final_height - 70 + "px";
         
     }
