@@ -209,6 +209,13 @@
             margin-top: 20px;
             height: calc(100% - 120px);
             overflow: auto;
+            & h4 {
+                transform: translateX(-10px);
+                font-size: 18px;
+                margin-top: 5px;
+                line-height: 20px;
+                color: rgba(255, 255, 255, 0.6);
+            }
         }
         & .list::-webkit-scrollbar {
             all:unset;
