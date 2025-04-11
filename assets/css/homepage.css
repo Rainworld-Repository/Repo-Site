@@ -163,7 +163,11 @@
     margin-bottom: 41px;
 }
 .website_content .info p a {
+    color: rgba(255, 255, 255, 0.75);
     text-decoration: underline;
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+    }
 }
 .website_content .info .quote_end {
     text-align: right;
