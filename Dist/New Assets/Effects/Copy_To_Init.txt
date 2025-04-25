@@ -1,3 +1,0 @@
--New Effects
-[#nm:"Pinecones", #tp:"standardPlant", #vars:3, #pxlSz:point(30,30), #pickColor:1, #hasGrad:1, #randomFlip:1, #placeAmt:3, #szVar:[0.8, 1.2], #rotVar:75, #strengthAffectSize:0, #strengthAffectVar:0, #rootAmt:4]
-[#nm:"Wall Bramble", #tp:"wall", #vars:7, #pxlSz:point(40,40), #pickColor:1, #hasGrad:1, #randomFlip:1, #randomRotat: 1, #placeAmt: 2, #szVar:[1, 1.4], #strengthAffectSize: 1, #can3D: 2]
