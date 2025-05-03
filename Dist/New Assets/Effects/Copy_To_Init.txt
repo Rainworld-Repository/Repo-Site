@@ -1,0 +1,2 @@
+-Ashen Plants
+[#nm:"Spiderlily", #tp:"standardPlant", #vars:10, #pxlSz:point(20,20), #pickColor:1, #randomFlip:1, #hasGrad:1, #szVar:[0.5, 1.2], #rootAmt:2]
