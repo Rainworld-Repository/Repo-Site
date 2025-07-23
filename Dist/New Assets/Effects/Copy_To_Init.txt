@@ -1,0 +1,4 @@
+-New Assets
+[#nm:"BarnacleGrass", #tp:"standardPlant", #vars:10, #pxlSz:point(15,15), #randomFlip:1, #pickColor:1, #hasGrad:1, #placeAmt:6, #szVar:[0.4, 1.2], #strengthAffectSize:1, #rootAmt:3]
+[#nm:"OrbitPlant", #tp:"standardPlant", #vars:25, #pxlSz:point(80,80), #randomFlip:1, #pickColor:1, #hasGrad:1, #placeAmt:1, #szVar:[01, 1], #strengthAffectSize:1, #rootAmt:8]
+[#nm:"Saxifringe", #tp:"standardPlant", #vars:10, #pxlSz:point(60,60), #pickColor:1, #hasGrad:1, #randomFlip:1, #placeAmt:5, #szVar:[0.8, 1], #rotVar:10, #strengthAffectSize:0, #strengthAffectVar:0, #rootAmt:5]
