@@ -68,7 +68,7 @@ async function generatePacks() {
                             let img = document.createElement("img")
                             let directories = packFolder.split("/")
 
-                            let imgUrl = `assets/media/img/lists/${directories[directories.length - 1]}/${fileName}.webp`
+                            let imgUrl = `assets/media/img/lists/${directories[directories.length - 1].toLowerCase()}/${fileName}.webp`
                             tryFetch(imgUrl)
                             .then((res) => {
                                 if (res) {
