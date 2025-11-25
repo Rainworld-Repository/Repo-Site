@@ -33,12 +33,10 @@ async function tryFetch(url) {
 async function generatePacks() {
     const categories = document.getElementsByClassName("category")
     if (categories && categories.length > 0) {
-        for (i = 0; i < categories.length; i++) {
-            let category = categories[i]
+        for (let category of categories) {
             let packFolder = category.getAttribute("packfolder")
             if (packFolder) {
                 // We have a packfolder attribute to inject into
-                
                 let grid = document.createElement("div")
                 grid.classList.add("grid")
                 grid.id = "first_grid"
@@ -47,13 +45,12 @@ async function generatePacks() {
                 fetchFiles(packFolder)
                 .then((json) => {
                     if (json) {
-                        for (i = 0; i < json.length; i++) {
-                            let item = json[i]
-                            if (i == 0) {
-                                continue
-                            }
+                        for (let item of json) {
                             let button = document.createElement("a")
                             button.href = `Dist/${item.path}`
+                            if (item.path.includes("http")) {
+                              button.href = item.path
+                            }
                             button.download = item.name
                             button.draggable = false
                             grid.appendChild(button)
@@ -63,12 +60,17 @@ async function generatePacks() {
                             button.appendChild(border)
 
                             let zipText = item.name
-                            let fileName = zipText.split('.')[0]
+                            let a = zipText.split('.')
+                            a.pop()
+                            let fileName = a.join(".")
+                            let imgName = fileName
+                            if (fileName.includes('[')) {
+                              imgName = fileName.split('[')[0].trim()
+                            }
 
                             let img = document.createElement("img")
                             let directories = packFolder.split("/")
-
-                            let imgUrl = `assets/media/img/lists/${directories[directories.length - 1].toLowerCase()}/${fileName}.webp`
+                            let imgUrl = `assets/media/img/lists/${directories[directories.length - 1].toLowerCase()}/${imgName}.webp`
                             tryFetch(imgUrl)
                             .then((res) => {
                                 if (res) {

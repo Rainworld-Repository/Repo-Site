@@ -38,7 +38,7 @@ function filter_results() {
             }
         }
         if (hidden_title) {
-            hidden_categories = hidden_categories + 1;
+            hidden_categories++;
             try {
                 category.querySelector(".combined_title").style.display = "none";
             } catch (error) {
