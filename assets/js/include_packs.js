@@ -53,7 +53,7 @@ async function generatePacks() {
                                 continue
                             }
                             let button = document.createElement("a")
-                            button.href = item.path
+                            button.href = `Dist/${item.path}`
                             button.download = item.name
                             button.draggable = false
                             grid.appendChild(button)
